@@ -11,6 +11,7 @@ local packages = {
       -- stylua: ignore
       keys = {
         { "<leader>du", function() require("dapui").toggle({ }) end, desc = "Dap UI" },
+        { "<leader>dq", function() require("dapui").toggle({layout = 2}) end, desc = "Close Dap UI" },
         { "<leader>de", function() require("dapui").eval() end, desc = "Eval", mode = {"n", "v"} },
       },
         opts = {
